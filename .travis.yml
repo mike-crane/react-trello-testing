@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: OtUTI2ETjeWmmM0eE6PQ63ieWsBkAvurBfBAM9voqwwIMedsGIIBYgr2CFhL6fYTMkP8z00AnyxzZiLE69Ha+DAciiKlz8plRWEDJJt01IGoMDlP7ow0qRgEymlTxGp1IK/6jWlexiDWBQ6Ixt+xD0F31LeFRHtlZtZ7+4Z0k1+UOQ4i5fH6B3pBZXr8amwyEAoBfrGvw7irDXuXwmcCSayQ2qUrj2ntyEFIukO78Atby/v6uHAM98tKaerGF6uO/ke30KepA/9CrIsooM7ugZkpfWKogG406GT6VmNStALJnS63GPlukf4tuKGJ5AZLdLUBuk1m84fafdQgrESjtGv6+4vsUfQLsoNhCE+8sENVeGk1eHLYmcruBstzTEo35XA2hjxnMJGtBQHiVKp6dVNZTj6sylsVr7T7lPVuoczf1tn6mzKoNGZUyp8TVPGg8Sb7WsqkSBDM5nJvB2G9z1M2VybXUBWwkdepf8+yH5BBq3qZTz5k+iroDWhTTQ2eyDYTVQGuN6OH4b0k1V3z385ml3tAa1rGsl5npLIpBdJokREtwi4VAbhhOuxcPXkF/PvOM3ed5NSnTV5SvW7FZk0Cp6Y5Gt/dkH/NehG1DIPJh0o9tSk8rBJMmOvoTgCYo32WVe62r2ZbOJvXATEOZF9DIoJowcU20aEg/RL2nig=
+  app: peaceful-garden-37494
+  on:
+    repo: mike-crane/react-trello-testing
